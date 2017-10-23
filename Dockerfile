@@ -7,4 +7,6 @@ RUN useradd -g jupyterhub -m jupyter
 RUN echo "jupyter:123456" | chpasswd
 RUN pip install notebook
 
+# install numpy pandas 
+pip install matplotlib numpy pandas
 EXPOSE 8000
