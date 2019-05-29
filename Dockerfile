@@ -8,5 +8,5 @@ RUN echo "jupyter:123456" | chpasswd
 RUN pip install notebook
 
 # install numpy pandas 
-RUN pip install matplotlib numpy pandas
+RUN pip install matplotlib numpy pandas opencv-python
 EXPOSE 8000
