@@ -8,5 +8,9 @@ RUN echo "jupyter:123456" | chpasswd
 RUN pip install notebook
 
 # install numpy pandas 
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get -yq install \
+        python-opencv && \
+        rm -rf /var/lib/apt/lists/*
 RUN pip install matplotlib numpy pandas opencv-python
 EXPOSE 8000
