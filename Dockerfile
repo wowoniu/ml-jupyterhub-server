@@ -12,5 +12,5 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -yq install \
         python-opencv && \
         rm -rf /var/lib/apt/lists/*
-RUN pip install matplotlib numpy pandas opencv-python
+RUN pip install matplotlib numpy pandas opencv-python moviepy Pillow
 EXPOSE 8000
