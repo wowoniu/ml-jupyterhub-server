@@ -1,6 +1,6 @@
 FROM jupyterhub/jupyterhub
 
-COPY fonts/msyh.ttf /tmp/
+COPY font/msyh.ttf /tmp/
 # add default user
 RUN groupadd jupyterhub  \
 && useradd -g jupyterhub -m jupyter \
